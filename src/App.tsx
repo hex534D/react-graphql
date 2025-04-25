@@ -43,7 +43,7 @@ function App() {
             <tr>
               <th
                 scope="col"
-                className="px-6 py-3 bg-gray-50 dark:bg-gray-800"
+                className="px-6 py-3 bg-gray-50"
               >
                 Name
               </th>
@@ -52,7 +52,7 @@ function App() {
               </th>
               <th
                 scope="col"
-                className="px-6 py-3 bg-gray-50 dark:bg-gray-800"
+                className="px-6 py-3 bg-gray-50"
               >
                 Todos List
               </th>
@@ -61,14 +61,14 @@ function App() {
           <tbody>
             {userTodos?.getAllUsers.map((user: User) => (
               <tr
-                className="border-b border-gray-200 dark:border-gray-700"
+                className="border border-gray-200"
                 key={user?.id}
               >
                 <td className="px-6 py-4 first:font-medium first:text-gray-900">
                   {user?.name}
                 </td>
                 <td className="px-6 py-4">{user?.email}</td>
-                <td className="px-6 py-4 bg-gray-50 dark:bg-gray-800">
+                <td className="px-6 py-4 bg-gray-50">
                   {user?.todos.map((todo: Todo) => (
                     <li key={todo?.id}>{todo?.title}</li>
                   ))}
